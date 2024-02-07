@@ -1,0 +1,12 @@
+.contact {
+  min-height: calc(-112px + 100vh + 22px);
+}
+.trasnition {
+  transition: 0.6s;
+  margin-bottom: 7px;
+  color: #1abc9c;
+  font-size: 16px;
+}
+.mylabel {
+  transform: translateX(0px) translateY(-25px);
+}

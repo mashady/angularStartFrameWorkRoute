@@ -1,0 +1,18 @@
+/**
+ * --------------------------------
+ * global css rules and styles
+ * --------------------------------
+ *  Navbar and Top Footer Background Color : ##2c3e50
+ * Bottom Footer Background Color : #1a252f
+ * Main Content Background Color : #1abc9c
+ * Project Cards Overlay Background color : #1abc9c, opacity 90.0%
+ * Buttons Color and Label On Start Writting Color : #1abc9c
+ * Border Bottom and Placeholder or label Color #dee2e6
+ *
+ *    Happy Coding :)
+ */
+
+router-outlet + *,
+router-outlet + * > div {
+  min-height: inherit;
+}

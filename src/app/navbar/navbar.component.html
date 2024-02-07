@@ -1,0 +1,54 @@
+<nav
+  class="navbar fixed-top navbar-expand-lg navbar-light bg-primary"
+  [class.py-4]="paddingExist"
+>
+  <div class="container">
+    <a
+      class="navbar-brand fs-2 fw-bold text-uppercase text-light"
+      routerLink="/"
+      (scroll)="onScroll($event)"
+      >start framework</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#main_nav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main_nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item me-3">
+          <a
+            class="nav-link text-uppercase fw-bold fs-6 rounded-3 text-light px-2"
+            routerLinkActive="active"
+            routerLink="/about"
+          >
+            about
+          </a>
+        </li>
+        <li class="nav-item me-3">
+          <a
+            class="nav-link text-uppercase fw-bold fs-6 rounded-3 text-light px-2"
+            routerLink="/portfolio"
+            routerLinkActive="active"
+          >
+            portfolio
+          </a>
+        </li>
+        <li class="nav-item me-3">
+          <a
+            class="nav-link text-uppercase fw-bold fs-6 rounded-3 text-light px-2"
+            routerLink="/contact"
+            routerLinkActive="active"
+          >
+            contact
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- navbar-collapse.// -->
+  </div>
+  <!-- container-fluid.// -->
+</nav>

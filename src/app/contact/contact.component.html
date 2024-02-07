@@ -1,0 +1,73 @@
+<div class="pt-4">
+  <app-star [title]="title" [color]="color"></app-star>
+
+  <div class="">
+    <div>
+      <form class="w-50 p-3 mx-auto mt-5">
+        <div class="position-relative mb-5">
+          <label
+            class="trasnition position-absolute top-0 left-0"
+            [class.mylabel]="animateUserName"
+            >user name:</label
+          >
+          <input
+            type="text"
+            class="form-control border-0 border-bottom py-3 position-relative shadow-none"
+            placeholder="user name"
+            (input)="userNameInput($event)"
+            [(ngModel)]="userName"
+            name="username"
+          />
+        </div>
+        <div class="position-relative mb-5">
+          <label
+            class="trasnition position-absolute top-0 left-0"
+            [class.mylabel]="animateUserAge"
+            >user age:</label
+          >
+          <input
+            type="text"
+            class="form-control border-0 border-bottom py-3 position-relative shadow-none"
+            placeholder="user age"
+            (input)="userAgeInput($event)"
+            [(ngModel)]="userAge"
+            name="userAge"
+          />
+        </div>
+        <div class="position-relative mb-5">
+          <label
+            class="trasnition position-absolute top-0 left-0"
+            [class.mylabel]="animateUserEmail"
+            >user email:</label
+          >
+          <input
+            type="text"
+            class="form-control border-0 border-bottom py-3 position-relative shadow-none"
+            placeholder="user name"
+            (input)="userEmailInput($event)"
+            [(ngModel)]="userEmail"
+            name="userEmail"
+          />
+        </div>
+        <div class="position-relative mb-5">
+          <label
+            class="trasnition position-absolute top-0 left-0"
+            [class.mylabel]="animateUserPassword"
+            >user password:</label
+          >
+          <input
+            type="text"
+            class="form-control border-0 border-bottom py-3 position-relative shadow-none"
+            placeholder="user name"
+            (input)="userPasswordInput($event)"
+            [(ngModel)]="userPassword"
+            name="user password"
+          />
+          <button class="btn mt-4 text-white" style="background-color: #1abc9c">
+            send message
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

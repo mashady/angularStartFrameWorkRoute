@@ -1,0 +1,36 @@
+<div class="pt-5 pb-4">
+  <app-star [title]="title" [color]="color"></app-star>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4 col-md-6" *ngFor="let item of projects; index as i">
+        <div
+          class="con rounded-3 overflow-hidden position-relative"
+          data-bs-toggle="modal"
+          [attr.data-bs-target]="'#idd' + i"
+        >
+          <img [src]="item" class="w-100 rounded-3" />
+          <div
+            class="overlay position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center"
+          >
+            <i class="text-white fa-solid fa-plus fa-6x"> </i>
+          </div>
+        </div>
+        <div
+          class="modal"
+          [attr.id]="'idd' + i"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div
+              class="position-fixed start-0 w-100 top-0 h-100 bg-primary bg-opacity-25 d-flex justify-content-center align-items-center"
+            >
+              <img [src]="item" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
